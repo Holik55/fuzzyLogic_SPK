@@ -37,8 +37,8 @@
         <select class="form-control" id="status" required>
           <option value="" disabled selected>Pilih Status Pekerjaan</option>
           <option value="tetap">Tetap</option>
-          <option value="tidak_tetap">Tidak Tetap</option>
-          <option value="tidak_bekerja">Tidak Bekerja</option>
+          <option value="tidak tetap">Tidak Tetap</option>
+          <option value="tidak bekerja">Tidak Bekerja</option>
         </select>
       </div>
       <button type="submit" class="btn btn-primary">Simpan</button>
@@ -54,7 +54,8 @@
           <th>Tanggungan</th>
           <th>Kondisi Rumah</th>
           <th>Status Pekerjaan</th>
-          <th>Status Kelayakan</th> <!-- Tambahkan kolom status kelayakan -->
+          <th>Skor</th> <!-- Kolom untuk skor -->
+          <th>Kelayakan</th> <!-- Kolom untuk kelayakan -->
           <th>Aksi</th>
         </tr>
       </thead>
@@ -79,7 +80,8 @@
                 <td>${item.jumlah_tanggungan}</td>
                 <td>${item.kondisi_rumah}</td>
                 <td>${item.status_pekerjaan}</td>
-                <td>${item.kelayakan}</td> <!-- Tampilkan status kelayakan -->
+                <td>${item.skor}</td> <!-- Tampilkan skor -->
+                <td>${item.kelayakan}</td> <!-- Tampilkan kelayakan -->
                 <td>
                   <button class="btn btn-warning btn-sm" onclick="editData(${item.id})">Edit</button>
                   <button class="btn btn-danger btn-sm" onclick="deleteData(${item.id})">Hapus</button>
