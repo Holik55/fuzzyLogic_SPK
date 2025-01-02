@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <title>Form Pengajuan Dana Bantuan</title>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Form Pengajuan Dana Bantuan</h1>
+    <div class="card shadow-lg">
+      <div class="card-body">
+        <form id="inputForm">
+          <!-- Input Nama -->
+          <div class="mb-3">
+            <label for="name" class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" id="name" placeholder="Masukkan nama lengkap Anda">
+          </div>
+          <!-- Input Penghasilan -->
+          <div class="mb-3">
+            <label for="income" class="form-label">Penghasilan Bulanan</label>
+            <input type="number" class="form-control" id="income" placeholder="Masukkan penghasilan bulanan (Rp)">
+          </div>
+
+          <!-- Input Jumlah Tanggungan -->
+          <div class="mb-3">
+            <label for="dependents" class="form-label">Jumlah Tanggungan Keluarga</label>
+            <input type="number" class="form-control" id="dependents" placeholder="Masukkan jumlah tanggungan keluarga">
+          </div>
+
+          <!-- Input Kondisi Rumah -->
+          <div class="mb-3">
+            <label for="houseCondition" class="form-label">Kondisi Rumah</label>
+            <select class="form-select" id="houseCondition">
+              <option value="baik">Baik</option>
+              <option value="sedang">Sedang</option>
+              <option value="buruk">Buruk</option>
+            </select>
+          </div>
+
+          <!-- Input Status Pekerjaan -->
+          <div class="mb-3">
+            <label for="jobStatus" class="form-label">Status Pekerjaan</label>
+            <select class="form-select" id="jobStatus">
+              <option value="tetap">Pekerjaan Tetap</option>
+              <option value="tidakTetap">Pekerjaan Tidak Tetap</option>
+              <option value="tidakBekerja">Tidak Bekerja</option>
+            </select>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary w-100">Ajukan Pengajuan</button>
+        </form>
+
+        <!-- Div untuk menampilkan hasil -->
+        <div id="resultContainer"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
